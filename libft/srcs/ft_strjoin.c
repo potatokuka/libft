@@ -6,14 +6,14 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/01 09:45:17 by greed          #+#    #+#                */
-/*   Updated: 2019/11/04 14:20:00 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/04 14:33:29 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static size_t		ft_dubstrlen(const char *str1, const char *str2)
+static size_t	ft_dubstrlen(const char *str1, const char *str2)
 {
 	int len1;
 	int len2;
@@ -53,7 +53,7 @@ static char		*ft_dubcpy(char *dest, char const *s1, char const *s2, size_t j)
 	return (dest);
 }
 
-char				*ft_strjoin(char const *s1, char const *s2)
+char			*ft_strjoin(char const *s1, char const *s2)
 {
 	void		*stored;
 	char		*dst;
