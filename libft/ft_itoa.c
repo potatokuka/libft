@@ -6,7 +6,7 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/02 16:43:13 by greed          #+#    #+#                */
-/*   Updated: 2019/11/05 14:30:25 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/06 11:03:31 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,24 @@
 
 static int		ft_numlen(int n)
 {
-	int		res;
+	int		len;
 
-	res = 0;
+	len = 0;
 	if (n == 0)
 		return (1);
 	if (n == -2147483648)
 		return (11);
 	if (n < 0)
 	{
-		res++;
+		len++;
 		n *= -1;
 	}
 	while (n > 0)
 	{
 		n /= 10;
-		res++;
+		len++;
 	}
-	return (res);
+	return (len);
 }
 
 static char		*ft_memorysize(int len)
