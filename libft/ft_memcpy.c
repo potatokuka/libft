@@ -6,7 +6,7 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/30 13:10:24 by greed          #+#    #+#                */
-/*   Updated: 2019/10/31 12:21:13 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/06 12:22:47 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,6 @@ void		*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	dest = dst;
 	srcs = src;
-	if (src == NULL || dst == NULL)
-		while (i)
-			i++;
 	if (src == NULL && dst == NULL)
 		return (NULL);
 	while (i < n)

@@ -6,7 +6,7 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/05 09:15:07 by greed          #+#    #+#                */
-/*   Updated: 2019/11/05 14:57:14 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/06 12:25:11 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int			ft_count_words(char const *str, char c)
 	i = 0;
 	in_words = 0;
 	count = 0;
-	if (!str)
+	if (!(str))
 		return (0);
 	while (str[i] != '\0')
 	{
@@ -95,7 +95,7 @@ char				**ft_split(char const *s, char c)
 {
 	char **words;
 
-	if (s == 0)
+	if (!(s))
 		return (NULL);
 	words = (char**)malloc(sizeof(char*) * (ft_count_words(s, c) + 1));
 	if (!(words))

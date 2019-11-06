@@ -6,7 +6,7 @@
 #    By: greed <greed@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/10/29 10:31:09 by greed          #+#    #+#                 #
-#    Updated: 2019/11/06 10:42:52 by greed         ########   odam.nl          #
+#    Updated: 2019/11/06 12:29:46 by greed         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ RESET	= \x1b[0m
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	@echo "$(GREEN)Linking the library"
+	@echo "$(YELLOW)Linking the library"
 	@ar rc $(NAME) $(OFILES)
 	@ranlib $(NAME)
 	@echo "$(GREEN)Done"
@@ -60,7 +60,7 @@ clean_b:
 re: fclean all
 
 bonus: $(OFILES) $(BOFILES) $(NAME)
-	@echo "$(GREEN)Linking the bonusses into the library"
+	@echo "$(YELLOW)Linking the bonusses into the library"
 	@ar rc $(NAME) $(OFILES) $(BOFILES)
 	@ranlib $(NAME)
 	@echo "$(GREEN)Done"
