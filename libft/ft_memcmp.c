@@ -6,7 +6,7 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/31 15:30:19 by greed          #+#    #+#                */
-/*   Updated: 2019/10/31 15:50:32 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/06 10:34:23 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,6 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	str1 = (unsigned const char*)s1;
 	str2 = (unsigned const char*)s2;
-	if (str1 == NULL || str2 == NULL)
-		while (i)
-			i++;
 	while (n)
 	{
 		if (*str1 != *str2)

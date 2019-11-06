@@ -6,11 +6,12 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/05 10:26:40 by greed          #+#    #+#                */
-/*   Updated: 2019/11/05 13:54:04 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/06 10:38:21 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_bonus.h"
+#include <stdlib.h>
 
 t_list			*ft_lstnew(void *content)
 {

@@ -6,13 +6,13 @@
 /*   By: greed <marvin@codam.nl>                      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 12:43:56 by greed          #+#    #+#                */
-/*   Updated: 2019/11/05 16:46:59 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/06 10:32:50 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strlen(char *str)
+int		ft_strlen(const char *str)
 {
 	int i;
 

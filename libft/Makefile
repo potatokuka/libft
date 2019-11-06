@@ -6,7 +6,7 @@
 #    By: greed <greed@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/10/29 10:31:09 by greed          #+#    #+#                 #
-#    Updated: 2019/11/05 16:38:23 by greed         ########   odam.nl          #
+#    Updated: 2019/11/06 10:42:52 by greed         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRCS		=	ft_atoi ft_isalnum ft_isalpha ft_isascii\
 	ft_putstr_fd ft_putendl_fd ft_putnbr_fd
 B_SRCS		=	ft_lstnew_bonus ft_lstadd_front_bonus ft_lstsize_bonus\
 	ft_lstlast_bonus ft_lstadd_back_bonus ft_lstdelone_bonus ft_lstclear_bonus\
-	ft_lstiter_bonus ft_lstmapi_bonus
+	ft_lstiter_bonus ft_lstmap_bonus
 CFILES		=	$(SRCS:%=%.c)
 OFILES		=	$(CFILES:.c=.o)
 BFILES		=	$(B_SRCS:%=%.c)
