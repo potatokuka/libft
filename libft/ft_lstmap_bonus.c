@@ -6,11 +6,12 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/05 16:20:14 by greed          #+#    #+#                */
-/*   Updated: 2019/11/06 10:41:05 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/06 15:07:04 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
+#include <stdlib.h>
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
@@ -18,15 +19,15 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 	void	*content;
 
-	if (lst == 0)
+	if (!(lst))
 		return (0);
 	res = 0;
 	while (lst)
 	{
-		content = f(lst);
-		if (!(content))
-			del(lst);
-		new = ft_lstnew(content);
+		content = f(lst->content);
+		new = ft_lstnew(f(lst->content));
+		if (!(new))
+			ft_lstclear(&lst, del);
 		ft_lstadd_back(&res, new);
 		lst = lst->next;
 	}
