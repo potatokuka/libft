@@ -6,7 +6,7 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/05 09:15:07 by greed          #+#    #+#                */
-/*   Updated: 2019/11/06 12:46:40 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/07 12:14:08 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ static void			*fremashin(int j, char **words)
 {
 	while (j != 0)
 	{
-		free(words[j]);
 		j--;
+		if (words[j])
+			free(words[j]);
 	}
 	free(words);
 	return (NULL);
