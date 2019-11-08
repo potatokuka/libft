@@ -6,7 +6,7 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/02 16:43:13 by greed          #+#    #+#                */
-/*   Updated: 2019/11/07 13:03:10 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/08 12:16:35 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static char		*ft_exceptions(int n)
 
 	res = (char*)malloc((n == 0) ? 2 : 13);
 	if (!(res))
-		return ((void*)0);
+		return (NULL);
 	if (n == 0)
 		ft_strlcpy(res, "0", 2);
 	else
