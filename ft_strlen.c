@@ -6,18 +6,18 @@
 /*   By: greed <marvin@codam.nl>                      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 12:43:56 by greed          #+#    #+#                */
-/*   Updated: 2019/11/07 12:48:31 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/11 09:55:59 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strlen(const char *str)
+size_t		ft_strlen(const char *s)
 {
 	size_t i;
 
 	i = 0;
-	while (str[i])
+	while (s[i])
 		i++;
 	return (i);
 }
