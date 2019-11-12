@@ -6,7 +6,7 @@
 /*   By: greed <greed@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/05 09:15:07 by greed          #+#    #+#                */
-/*   Updated: 2019/11/07 12:48:36 by greed         ########   odam.nl         */
+/*   Updated: 2019/11/12 10:31:40 by greed         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,8 +96,10 @@ char				**ft_split(char const *s, char c)
 {
 	char **words;
 
+	if (!(s))
+		return (NULL);
 	words = (char**)malloc(sizeof(char*) * (ft_count_words(s, c) + 1));
-	if (!(words) || (!(s)))
+	if (!(words))
 		return (NULL);
 	ft_gridfill(s, c, words);
 	return (words);
